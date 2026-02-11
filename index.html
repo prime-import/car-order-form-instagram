@@ -143,8 +143,8 @@ input[type=number]{-moz-appearance:textfield;}
 </div>
 
 <div class="field">
-<label>Telegram</label>
-<input id="telegram" type="text">
+<label>Instagram</label>
+<input id="instagram" type="text">
 </div>
 
 <div class="field">
@@ -196,7 +196,7 @@ document.getElementById('carForm').addEventListener('submit', function(e){
 
   const name=document.getElementById('name').value.trim();
   const phone=document.getElementById('phone').value.trim();
-  const telegram=document.getElementById('telegram').value.trim();
+  const instagram=document.getElementById('instagram').value.trim();
   const country=document.getElementById('country').value.trim();
   const city=document.getElementById('city').value.trim();
   const car=document.getElementById('car').value.trim();
@@ -211,10 +211,10 @@ document.getElementById('carForm').addEventListener('submit', function(e){
       fields:{
         TITLE:'Заявка: '+name,
         NAME:name,
-        SOURCE_ID: 153, // Instagram
+        SOURCE_ID: 153,  // Instagram
         PHONE:[{VALUE:phone,VALUE_TYPE:'WORK'}],
         COMMENTS:
-          'Telegram: '+telegram+'\n'+
+          'Instagram: '+instagram+'\n'+
           'Страна покупки: '+country+'\n'+
           'Город доставки: '+city+'\n'+
           'Марка / модель: '+car+'\n'+
