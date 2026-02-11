@@ -70,7 +70,6 @@ input[type=number]::-webkit-inner-spin-button{
 input[type=number]{-moz-appearance:textfield;}
 
 /* ===== МОДАЛЬНОЕ ОКНО ===== */
-
 #successModal{
   display:none;
   position:fixed;
@@ -143,8 +142,8 @@ input[type=number]{-moz-appearance:textfield;}
 </div>
 
 <div class="field">
-<label>Instagram</label>
-<input id="instagram" type="text">
+<label>Telegram</label>
+<input id="telegram" type="text">
 </div>
 
 <div class="field">
@@ -196,7 +195,7 @@ document.getElementById('carForm').addEventListener('submit', function(e){
 
   const name=document.getElementById('name').value.trim();
   const phone=document.getElementById('phone').value.trim();
-  const instagram=document.getElementById('instagram').value.trim();
+  const telegram=document.getElementById('telegram').value.trim();
   const country=document.getElementById('country').value.trim();
   const city=document.getElementById('city').value.trim();
   const car=document.getElementById('car').value.trim();
@@ -214,7 +213,7 @@ document.getElementById('carForm').addEventListener('submit', function(e){
         SOURCE_ID: 153,  // Instagram
         PHONE:[{VALUE:phone,VALUE_TYPE:'WORK'}],
         COMMENTS:
-          'Instagram: '+instagram+'\n'+
+          'Telegram: '+telegram+'\n'+
           'Страна покупки: '+country+'\n'+
           'Город доставки: '+city+'\n'+
           'Марка / модель: '+car+'\n'+
